@@ -3,23 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		608F9935B9588DEB17EF963D /* Pods_samost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7A8305D7DC01787C483723 /* Pods_samost.framework */; };
 		CE0069AE266A5231004A817E /* samostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0069AD266A5231004A817E /* samostApp.swift */; };
-		CE0069B0266A5231004A817E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0069AF266A5231004A817E /* ContentView.swift */; };
+		CE0069B0266A5231004A817E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0069AF266A5231004A817E /* SignInView.swift */; };
 		CE0069B2266A5232004A817E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0069B1266A5232004A817E /* Assets.xcassets */; };
 		CE0069B5266A5232004A817E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0069B4266A5232004A817E /* Preview Assets.xcassets */; };
+		CE5A7157266B8E7A00A37BD8 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A7156266B8E7A00A37BD8 /* UserObject.swift */; };
+		CE5A7159266B9C3100A37BD8 /* samost1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5A7158266B9C3100A37BD8 /* samost1.storyboard */; };
+		CE5A715B266BA09800A37BD8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A715A266BA09800A37BD8 /* RootView.swift */; };
+		CE5A715D266BA42700A37BD8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A715C266BA42700A37BD8 /* MainView.swift */; };
+		CE5A715F266BAB0C00A37BD8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A715E266BAB0C00A37BD8 /* HomeView.swift */; };
+		CEEDFD30266B659F000E3A3A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CEEDFD2F266B659F000E3A3A /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C31929DB7E3C3437E65169 /* Pods-samost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-samost.debug.xcconfig"; path = "Target Support Files/Pods-samost/Pods-samost.debug.xcconfig"; sourceTree = "<group>"; };
+		6A7A8305D7DC01787C483723 /* Pods_samost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_samost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		719E964E562865A893B46C51 /* Pods-samost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-samost.release.xcconfig"; path = "Target Support Files/Pods-samost/Pods-samost.release.xcconfig"; sourceTree = "<group>"; };
 		CE0069AA266A5231004A817E /* samost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0069AD266A5231004A817E /* samostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = samostApp.swift; sourceTree = "<group>"; };
-		CE0069AF266A5231004A817E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE0069AF266A5231004A817E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		CE0069B1266A5232004A817E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0069B4266A5232004A817E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE0069B6266A5232004A817E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5A7156266B8E7A00A37BD8 /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
+		CE5A7158266B9C3100A37BD8 /* samost1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = samost1.storyboard; sourceTree = "<group>"; };
+		CE5A715A266BA09800A37BD8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CE5A715C266BA42700A37BD8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE5A715E266BAB0C00A37BD8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +42,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEDFD30266B659F000E3A3A /* SwiftyJSON in Frameworks */,
+				608F9935B9588DEB17EF963D /* Pods_samost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8165743B7445BBBA22D367EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A7A8305D7DC01787C483723 /* Pods_samost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1F697F2374456A309100D26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02C31929DB7E3C3437E65169 /* Pods-samost.debug.xcconfig */,
+				719E964E562865A893B46C51 /* Pods-samost.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE0069A1266A5231004A817E = {
 			isa = PBXGroup;
 			children = (
 				CE0069AC266A5231004A817E /* samost */,
 				CE0069AB266A5231004A817E /* Products */,
+				C1F697F2374456A309100D26 /* Pods */,
+				8165743B7445BBBA22D367EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +89,12 @@
 			isa = PBXGroup;
 			children = (
 				CE0069AD266A5231004A817E /* samostApp.swift */,
-				CE0069AF266A5231004A817E /* ContentView.swift */,
+				CE5A715A266BA09800A37BD8 /* RootView.swift */,
+				CE0069AF266A5231004A817E /* SignInView.swift */,
+				CE5A715C266BA42700A37BD8 /* MainView.swift */,
+				CE5A715E266BAB0C00A37BD8 /* HomeView.swift */,
+				CE5A7158266B9C3100A37BD8 /* samost1.storyboard */,
+				CE5A7156266B8E7A00A37BD8 /* UserObject.swift */,
 				CE0069B1266A5232004A817E /* Assets.xcassets */,
 				CE0069B6266A5232004A817E /* Info.plist */,
 				CE0069B3266A5232004A817E /* Preview Content */,
@@ -76,15 +117,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0069B9266A5232004A817E /* Build configuration list for PBXNativeTarget "samost" */;
 			buildPhases = (
+				7B848A4444C4F8C01FC480C7 /* [CP] Check Pods Manifest.lock */,
 				CE0069A6266A5231004A817E /* Sources */,
 				CE0069A7266A5231004A817E /* Frameworks */,
 				CE0069A8266A5231004A817E /* Resources */,
+				1DB829B5D5815DC22C3D81DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = samost;
+			packageProductDependencies = (
+				CEEDFD2F266B659F000E3A3A /* SwiftyJSON */,
+			);
 			productName = samost;
 			productReference = CE0069AA266A5231004A817E /* samost.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +158,9 @@
 				Base,
 			);
 			mainGroup = CE0069A1266A5231004A817E;
+			packageReferences = (
+				CEEDFD2E266B659F000E3A3A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = CE0069AB266A5231004A817E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5A7159266B9C3100A37BD8 /* samost1.storyboard in Resources */,
 				CE0069B5266A5232004A817E /* Preview Assets.xcassets in Resources */,
 				CE0069B2266A5232004A817E /* Assets.xcassets in Resources */,
 			);
@@ -133,13 +183,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DB829B5D5815DC22C3D81DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-samost/Pods-samost-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-samost/Pods-samost-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-samost/Pods-samost-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B848A4444C4F8C01FC480C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-samost-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE0069A6266A5231004A817E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0069B0266A5231004A817E /* ContentView.swift in Sources */,
+				CE0069B0266A5231004A817E /* SignInView.swift in Sources */,
+				CE5A715B266BA09800A37BD8 /* RootView.swift in Sources */,
 				CE0069AE266A5231004A817E /* samostApp.swift in Sources */,
+				CE5A715F266BAB0C00A37BD8 /* HomeView.swift in Sources */,
+				CE5A715D266BA42700A37BD8 /* MainView.swift in Sources */,
+				CE5A7157266B8E7A00A37BD8 /* UserObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +360,7 @@
 		};
 		CE0069BA266A5232004A817E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C31929DB7E3C3437E65169 /* Pods-samost.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +382,7 @@
 		};
 		CE0069BB266A5232004A817E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719E964E562865A893B46C51 /* Pods-samost.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEEDFD2E266B659F000E3A3A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEEDFD2F266B659F000E3A3A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEDFD2E266B659F000E3A3A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE0069A2266A5231004A817E /* Project object */;
 }
