@@ -88,14 +88,9 @@
 		CE0069AC266A5231004A817E /* samost */ = {
 			isa = PBXGroup;
 			children = (
-				CE0069AD266A5231004A817E /* samostApp.swift */,
-				CE5A715A266BA09800A37BD8 /* RootView.swift */,
-				CE0069AF266A5231004A817E /* SignInView.swift */,
-				CE5A715C266BA42700A37BD8 /* MainView.swift */,
-				CE5A715E266BAB0C00A37BD8 /* HomeView.swift */,
-				CE5A7158266B9C3100A37BD8 /* samost1.storyboard */,
-				CE5A7156266B8E7A00A37BD8 /* UserObject.swift */,
-				CE0069B1266A5232004A817E /* Assets.xcassets */,
+				CE5A7162266BB29A00A37BD8 /* Common */,
+				CE5A7160266BB26A00A37BD8 /* View */,
+				CE5A7161266BB27F00A37BD8 /* Object */,
 				CE0069B6266A5232004A817E /* Info.plist */,
 				CE0069B3266A5232004A817E /* Preview Content */,
 			);
@@ -108,6 +103,35 @@
 				CE0069B4266A5232004A817E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE5A7160266BB26A00A37BD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A715A266BA09800A37BD8 /* RootView.swift */,
+				CE0069AF266A5231004A817E /* SignInView.swift */,
+				CE5A715C266BA42700A37BD8 /* MainView.swift */,
+				CE5A715E266BAB0C00A37BD8 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5A7161266BB27F00A37BD8 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A7156266B8E7A00A37BD8 /* UserObject.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		CE5A7162266BB29A00A37BD8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE0069AD266A5231004A817E /* samostApp.swift */,
+				CE5A7158266B9C3100A37BD8 /* samost1.storyboard */,
+				CE0069B1266A5232004A817E /* Assets.xcassets */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
