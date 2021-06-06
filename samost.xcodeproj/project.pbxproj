@@ -17,6 +17,8 @@
 		CE5A715B266BA09800A37BD8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A715A266BA09800A37BD8 /* RootView.swift */; };
 		CE5A715D266BA42700A37BD8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A715C266BA42700A37BD8 /* MainView.swift */; };
 		CE5A715F266BAB0C00A37BD8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A715E266BAB0C00A37BD8 /* HomeView.swift */; };
+		CE5A7164266C9E9300A37BD8 /* MovieObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A7163266C9E9300A37BD8 /* MovieObject.swift */; };
+		CE5A7167266CA6A300A37BD8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE5A7166266CA6A300A37BD8 /* SDWebImageSwiftUI */; };
 		CEEDFD30266B659F000E3A3A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CEEDFD2F266B659F000E3A3A /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,7 @@
 		CE5A715A266BA09800A37BD8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CE5A715C266BA42700A37BD8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CE5A715E266BAB0C00A37BD8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CE5A7163266C9E9300A37BD8 /* MovieObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5A7167266CA6A300A37BD8 /* SDWebImageSwiftUI in Frameworks */,
 				CEEDFD30266B659F000E3A3A /* SwiftyJSON in Frameworks */,
 				608F9935B9588DEB17EF963D /* Pods_samost.framework in Frameworks */,
 			);
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5A7156266B8E7A00A37BD8 /* UserObject.swift */,
+				CE5A7163266C9E9300A37BD8 /* MovieObject.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			name = samost;
 			packageProductDependencies = (
 				CEEDFD2F266B659F000E3A3A /* SwiftyJSON */,
+				CE5A7166266CA6A300A37BD8 /* SDWebImageSwiftUI */,
 			);
 			productName = samost;
 			productReference = CE0069AA266A5231004A817E /* samost.app */;
@@ -184,6 +190,7 @@
 			mainGroup = CE0069A1266A5231004A817E;
 			packageReferences = (
 				CEEDFD2E266B659F000E3A3A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				CE5A7165266CA6A300A37BD8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CE0069AB266A5231004A817E /* Products */;
 			projectDirPath = "";
@@ -259,6 +266,7 @@
 				CE0069AE266A5231004A817E /* samostApp.swift in Sources */,
 				CE5A715F266BAB0C00A37BD8 /* HomeView.swift in Sources */,
 				CE5A715D266BA42700A37BD8 /* MainView.swift in Sources */,
+				CE5A7164266C9E9300A37BD8 /* MovieObject.swift in Sources */,
 				CE5A7157266B8E7A00A37BD8 /* UserObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +458,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE5A7165266CA6A300A37BD8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
 		CEEDFD2E266B659F000E3A3A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
@@ -461,6 +477,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE5A7166266CA6A300A37BD8 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE5A7165266CA6A300A37BD8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		CEEDFD2F266B659F000E3A3A /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CEEDFD2E266B659F000E3A3A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;

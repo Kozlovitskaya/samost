@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct HomeView: View {
+    @StateObject var movieObject = MovieObject()
+    
     var body: some View {
         VStack{
             HStack {
@@ -20,15 +23,26 @@ struct HomeView: View {
             ScrollView(.horizontal, showsIndicators: false,
                        content: {
                         HStack {
-                            ForEach(0...15, id: \.self) { _ in
-                                Image("planeta")
+//                            ForEach(0...15, id: \.self) { _ in
+//                                Image("planeta")
+//                                    .resizable()
+//                                    .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                            }
+                            ForEach(movieObject.posters, id:\.self) { poster in
+                                WebImage(url: URL(string: "http://cinema.areas.su/up/images/\(poster)"))
                                     .resizable()
-                                    .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width: 75, height: 75)
+                                    .clipShape(Circle())
+                                
                             }
                             
                         }.border(Color.black)
             })
             Spacer()
+        }
+        .onAppear(){
+            movieObject.getMovies()
+            
         }
     }
 }
